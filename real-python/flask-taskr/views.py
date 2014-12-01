@@ -2,8 +2,7 @@
 
 # IMPORTS
 
-from flask import Flask, flash, redirect, render_template, request \
-    session, url_for
+from flask import Flask, flash, redirect, render_template, request, session, url_for
 from functools import wraps
 import sqlite3
 
@@ -29,7 +28,7 @@ def login_required(test):
 
 @app.route('/logout/')
 def logout():
-    session.pop('logged_in', None
+    session.pop('logged_in', None)
     flash('You are logged out. Bye. :(')
     return redirect(url_for('login'))
 
