@@ -1,3 +1,5 @@
+# Create a SQLite3 database and table
+
 import sqlite3
 
 conn = sqlite3.connect("new.db")
