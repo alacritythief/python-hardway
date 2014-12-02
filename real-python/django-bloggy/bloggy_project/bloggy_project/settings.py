@@ -49,6 +49,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Third Party Apps
+    'django_forms_bootstrap',
+
     # Local Apps
     'blog',
 )
